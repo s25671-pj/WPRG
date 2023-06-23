@@ -1,5 +1,5 @@
 <?php
-include "../login/login_cookie.php";
+session_start();
 include "../main/head.php";
 ?>
 
@@ -10,7 +10,7 @@ include "../main/head.php";
         include "../login/logoutbutton.html";
         ?>
         <div class="logs c3">
-                <h2>Zalogowano</h2>
-                <a href="../main/main.php"><button type="submit" class="button">Dalej</button></a>
+                <h2>Brak list do usunięcia</h2>
+                <a href="../main/main.php"><button type="submit" class="button">Powrót</button></a>
         </div>
     </div>

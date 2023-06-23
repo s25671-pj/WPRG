@@ -7,7 +7,7 @@
     grid-auto-flow: row;
     place-items: center;
     grid-template-areas:
-      ". header header header header header ."
+      "header1 header2 header3 header4 header5 header6 header7"
       "asideLeft Logo Logo Logo Logo Logo asideRight"
       "asideLeft a1 b1 c1 d1 e1 asideRight"
       "asideLeft a2 b2 c2 d2 e2 asideRight"
@@ -21,6 +21,24 @@
     grid-area: Logo; 
   }
 
+  .creator {
+    grid-area: 5 / 4 / 5 /4;
+  }
+
+  .messLeft {
+    grid-area: 3 / 3 / 3 / 3;
+
+  }
+
+  .messRight {
+    grid-area: 3 / 5 / 3 / 7;
+  }
+
+  .editlist {
+    grid-area: 3 / 3 / 6 / 6;
+    grid-auto-columns: auto;
+  }
+
   .header { 
     grid-area: header; 
     position: fixed;
@@ -32,6 +50,10 @@
     text-shadow: none;
     z-index: 0;
   }
+
+.header6{
+  z-index: 1;
+}
 
   .Logo img { width: auto; 
     height: auto;

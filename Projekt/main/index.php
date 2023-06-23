@@ -4,7 +4,7 @@ include "head.php";
 <body>
     <div class="container">
     <?php
-    include "design.php";
+    include "design_lout.html";
     ?>
 
         <div class="b3 logs">

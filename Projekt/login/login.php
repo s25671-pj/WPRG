@@ -1,11 +1,12 @@
 <?php
+session_start();
 include "../main/head.php";
 ?>
 
 <body>
     <div class="container">
         <?php
-        include "../main/design.php";
+        include "../main/design_lout.html";
         ?>
 
         <div class="c3 logs">
@@ -31,6 +32,8 @@ include "../main/head.php";
             $loginSuccess = loginUser($username, $password);
 
             if ($loginSuccess) {
+                $_SESSION['username'] = $username; // Ustawienie nazwy użytkownika w sesji
+                setcookie('isLoggedIn', 'true', time() + 86400, '/');
                 header("Location: login_ok.php");
                 exit;
             } else {
